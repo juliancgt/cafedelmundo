@@ -1,7 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Roboto&display=swap');
 
-body { font-family: sans-serif; background: #f5f2eb; color: #3e2c1c; margin: 0; padding: 0; }
-header, footer { background: #6b4e2a; color: white; padding: 1rem; text-align: center; }
-nav a { margin: 0 1rem; color: white; text-decoration: none; }
-main { padding: 2rem; }
-section { margin-bottom: 3rem; }
-h2 { border-bottom: 2px solid #6b4e2a; padding-bottom: 0.5rem; }
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f3f0eb;
+  color: #3e2c1c;
+  line-height: 1.6;
+}
+
+header, footer {
+  background: #4b2e19;
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.8rem;
+  margin: 0;
+}
+
+nav {
+  margin-top: 1rem;
+}
+
+nav a {
+  margin: 0 1rem;
+  color: #f9eac3;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ffd700;
+}
+
+main {
+  padding: 2rem 1.5rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+section {
+  margin-bottom: 4rem;
+}
+
+section:nth-child(even) {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  color: #4b2e19;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #c8a97e;
+  padding-bottom: 0.5rem;
+}
+
+button {
+  background-color: #6b4e2a;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #4b2e19;
+}
+
+footer {
+  margin-top: 3rem;
+  font-size: 0.9rem;
+}
+
+img.fullwidth {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 1rem;
+}
