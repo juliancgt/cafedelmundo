@@ -1,92 +1,74 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Roboto&display=swap');
-
+/* Fuente principal */
 body {
+  font-family: 'Noto Serif', 'Noto Sans', sans-serif;
+  background-color: #ffffff;
+  color: #161412;
   margin: 0;
-  font-family: 'Roboto', sans-serif;
-  background-color: #f3f0eb;
-  color: #3e2c1c;
-  line-height: 1.6;
+  padding: 0;
 }
 
-header, footer {
-  background: #4b2e19;
-  color: white;
-  padding: 2rem 1rem;
-  text-align: center;
-}
-
-header h1 {
-  font-family: 'Playfair Display', serif;
-  font-size: 2.8rem;
-  margin: 0;
-}
-
-nav {
-  margin-top: 1rem;
-}
-
-nav a {
-  margin: 0 1rem;
-  color: #f9eac3;
-  font-weight: bold;
+/* Estilo general de enlaces */
+a {
   text-decoration: none;
-  transition: color 0.3s;
+  transition: color 0.2s ease;
 }
 
-nav a:hover {
-  color: #ffd700;
+a:hover {
+  color: #b08968;
 }
 
-main {
-  padding: 2rem 1.5rem;
-  max-width: 1200px;
-  margin: auto;
-}
-
-section {
-  margin-bottom: 4rem;
-}
-
-section:nth-child(even) {
-  background-color: #fff;
-  padding: 2rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-}
-
-h2 {
-  font-family: 'Playfair Display', serif;
-  font-size: 2rem;
-  color: #4b2e19;
-  margin-bottom: 1rem;
-  border-bottom: 2px solid #c8a97e;
-  padding-bottom: 0.5rem;
-}
-
+/* Botón Carrito */
 button {
-  background-color: #6b4e2a;
-  color: white;
-  border: none;
-  padding: 0.8rem 1.5rem;
-  font-size: 1rem;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s ease, transform 0.1s ease;
 }
 
 button:hover {
-  background-color: #4b2e19;
+  background-color: #e0dcd9;
+  transform: scale(1.02);
 }
 
-footer {
-  margin-top: 3rem;
-  font-size: 0.9rem;
+/* Buscador */
+input[type="text"],
+input[type="search"],
+input[type="email"],
+input[type="password"] {
+  transition: box-shadow 0.2s ease;
 }
 
-img.fullwidth {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-  margin-top: 1rem;
+input:focus {
+  box-shadow: 0 0 0 2px #d6c8c0;
+}
+
+/* Encabezado */
+header {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+  background-color: #ffffff;
+  z-index: 10;
+}
+
+/* Tarjetas de producto */
+.product-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Paginación */
+.pagination a {
+  transition: background-color 0.2s ease;
+}
+
+.pagination a:hover {
+  background-color: #e8e5e3;
+}
+
+/* Títulos */
+h1, h2, h3, h4 {
+  color: #161412;
+  font-weight: 700;
+  letter-spacing: -0.015em;
 }
